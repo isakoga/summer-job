@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>addEventListener Example</title>
+  <style>
+    .color {
+      background-color: orange;
+      border: 1px solid black;
+      height: 250px;
+      width: 250px;
+      margin: 20px;
+    }
+
+    .red-color {
+      background-color: red;
+      border: 1px solid black;
+      height: 250px;
+      width: 250px;
+      margin: 20px;
+    }
+
+    .green-color {
+      background-color: green;
+      border: 1px solid black;
+      height: 250px;
+      width: 250px;
+      margin: 20px;
+    }
+
+    .blue-color {
+      background-color: blue;
+      border: 1px solid black;
+      height: 250px;
+      width: 250px;
+      margin: 20px;
+    }
+
+    .yellow-color {
+      background-color: yellow;
+      border: 1px solid black;
+      height: 250px;
+      width: 250px;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="color" id="color-div">
+  </div>
+  <button type="submit" id="red-button">VERMELHO</button>
+  <button type="submit" id="green-button">VERDE</button>
+  <button type="submit" id="blue-button">AZUL</button>
+  <button type="submit" id="yellow-button">AMARELO</button>
+
+  <script>
+    const colorDiv = document.getElementById('color-div');
+
+    const redButton = document.getElementById('red-button');
+    redButton.addEventListener('click', function() {
+      colorDiv.className = 'red-color';
+    });
+
+    const greenButton = document.getElementById('green-button');
+    greenButton.addEventListener('click', function() {
+      colorDiv.className = 'green-color';
+    });
+
+    const blueButton = document.getElementById('blue-button');
+    blueButton.addEventListener('click', function() {
+      colorDiv.className = 'blue-color';
+    });
+    
+    const yellowButton = document.getElementById('yellow-button');
+    yellowButton.addEventListener('click', function() {
+      colorDiv.className = 'yellow-color';
+    });
+  </script>
+</body>
+</html>
