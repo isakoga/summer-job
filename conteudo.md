@@ -166,45 +166,44 @@ EVENTOS JAVASCRIPT
   1 - A seguir você encontra um formulário para preenchimento de alguns dados, após o preenchimento desses dados, ao clicar no botão 'Submit', deverá aparecer uma frase na tela com os dados preenchidos no formulário. Ex.: Olá _João_, você possui _28_ anos, nasceu em _São Paulo_. Gosta de _escrever códigos_ e no seu tempo livre você adora _andar de bike_!
   Se algum dos inputs estiver em branco deverá aparecer um alerta de erro na página.
 
-  ```HTML
+```HTML
   <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formando a frase</title>
-  <style>
-    section {
-      display: flex;
-      flex-direction: column;
-      width: 30%;
-      margin: 10px;
-    }
-    input {
-      margin: 5px;
-    }
-    button {
-      margin: 5px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Criando uma frase usando eventos</h1>
-  </header>
-  <section id="form" class="form-sect">
-    <label for="name-input">Nome:</label><input type="text" id="name-input" placeholder="nome">
-    <label for="name-input">Idade:</label><input type="text" id="age-input" placeholder="Idade">
-    <label for="name-input">Local de nascimento:</label><input type="text" id="birthplace-input" placeholder="Local de Nascimento">
-    <label for="name-input">O que gosta de fazer?</label><input type="text" id="like-input" placeholder="O que gosta de fazer">
-    <label for="name-input">No tempo livre, o que você faz?</label><input type="text" id="free-time-input" placeholder="Hobby">
-
-    <button type="submit" id="button-submit">Criar frase!</button>
-  </section>
-  <section id="result"></section>
-</body>
-</html>
-  ```
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formando a frase</title>
+        <style>
+          section {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            margin: 10px;
+          }
+          input {
+            margin: 5px;
+          }
+          button {
+            margin: 5px;
+          }
+        </style>
+      </head>
+      <body>
+        <header>
+          <h1>Criando uma frase usando eventos</h1>
+        </header>
+        <section id="form" class="form-sect">
+          <label for="name-input">Nome:</label><input type="text" id="name-input" placeholder="nome">
+          <label for="name-input">Idade:</label><input type="text" id="age-input" placeholder="Idade">
+          <label for="name-input">Local de nascimento:</label><input type="text" id="birthplace-input" placeholder="Local de Nascimento">
+          <label for="name-input">O que gosta de fazer?</label><input type="text" id="like-input" placeholder="O que gosta de fazer">
+          <label for="name-input">No tempo livre, o que você faz?</label><input type="text" id="free-time-input" placeholder="Hobby">
+          <button type="submit" id="button-submit">Criar frase!</button>
+        </section>
+        <section id="result"></section>
+      </body>
+    </html>
+```
 
   2 - O código abaixo gera uma página com cinco quadrados de cores diferentes e cinco quadrados brancos.
       Ao passar o mouse por cima de algum dos quadrados, a cor de fundo da tela deverá mudar para cor do respectivo quadrado.
