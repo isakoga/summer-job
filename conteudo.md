@@ -39,12 +39,13 @@ EVENTOS JAVASCRIPT
 
     Para adicionar um evento utilizamos a função 'addEventListener' que tem como parâmetros o tipo de evento que vai ser escutado e qual a função que ele vai executar.
       
-      variavel.addEventListener('event', function)
+      HTMLelement.addEventListener('event', function)
     
     Você lembra como podemos acessar elementos HTML usando o DOM, certo? Aqui vamos utilizá-los muito!!
     
     Vamos supor que temos uma página HTML com um botão com o id 'button-submit' e uma div com o id 'output' vazia, ao clicar no botão eu quero que ele acrescente a frase 'Estou aprendendo a trabalhar com eventos!' na div, como fariamos isso em códigos?
     Veja os passos a seguir e reproduza em sua máquina:
+  
       1 - Resgatamos os elementos HTML e encapsulamos em variáveis dentro do meu JS.
         const buttonSubmit = document.getElementById('button-submit');
         const divOutput = document.getElementById('output');
