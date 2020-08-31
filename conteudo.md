@@ -180,11 +180,9 @@ EVENTOS JAVASCRIPT
       width: 30%;
       margin: 10px;
     }
-
     input {
       margin: 5px;
     }
-
     button {
       margin: 5px;
     }
