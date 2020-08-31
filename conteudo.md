@@ -205,14 +205,88 @@ EVENTOS JAVASCRIPT
     </html>
 ```
 
-  2 - O código abaixo gera uma página com cinco quadrados de cores diferentes e cinco quadrados brancos.
-      Ao passar o mouse por cima de algum dos quadrados, a cor de fundo da tela deverá mudar para cor do respectivo quadrado.
-      Ao clicar em um dos quadrados coloridos, a cor de todos os quadrados brancos deve mudar para a cor do quadrado clicado.
-      Ao clicar duas vezes em algum dos quadrados brancos, a frase "Estou manipulando elementos" deve aparecer na seção abaixo deles.
-      Ao pressionar a tecla "SHIFT" o texto desaparece.
+  2 - A partir de cinco inputs de números e dois botões (par e ímpar). Você deve criar as funções para que ao receber os números e clicar em um dos botões, apareça um array na seção "result" apenas com os números condizentes com o botão apertado. Caso algum dos números recebidos seja nulo, ao clicar no botão deverá aparecer um alerta na página com o texto 'Input inválido. Por favor insira todos os números para executar a operação'.
 
-  3 - A partir de cinco inputs de números e dois botões (par e ímpar). Você deve criar as funções para que ao receber os números e clicar em um dos botões, apareça um array na seção "result" apenas com os números condizentes com o botão apertado. Caso algum dos números recebidos seja 0 ou nulo, ao clicar no botão deverá aparecer um alerta na página com o texto 'Input inválido. Por favor insira todos os números para executar a operação'.
+  ```HTML
+  <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trybe numbers</title>
+        <style>
+          .numbers {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 10px;
+          }
+        </style>
+      </head>
+      <body>
+        <header>
+          <h1>Bem vindo ao selecionador de números</h1>
+        </header>
+        <section class="numbers">
+          <label for="number-input1">Digite um número:</label><input type="number" id="number-input1">
+          <label for="number-input2">Digite um número:</label><input type="number" id="number-input2">
+          <label for="number-input3">Digite um número:</label><input type="number" id="number-input3">
+          <label for="number-input4">Digite um número:</label><input type="number" id="number-input4">
+          <label for="number-input5">Digite um número:</label><input type="number" id="number-input5">
+        </section>
+        <section class="buttons">
+          <button type="submit" id="even-button">Par</button>
+          <button type="submit" id="odd-button">Impar</button>
+        </section>
+        <section class="result"></section>
+      </body>
+    </html>
+```
        
+  3 - O código abaixo gera uma página com cinco quadrados de cores diferentes e cinco quadrados brancos.
+      Ao passar o mouse por cima de algum dos quadrados, a cor de fundo da tela deverá mudar para cor do respectivo quadrado.
+      Ao clicar uma vez em algum dos quadrados brancos, a frase "Estou manipulando elementos" deve aparecer na seção abaixo deles.
+      Ao clicar duas vezes o texto desaparece.
+
+  ```HTML
+  <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Troque a cor</title>
+        <style>
+          section {
+            display: flex;
+          }
+          div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 5px;
+          }
+        </style>
+      </head>
+      <body>
+        <section>
+          <div style= "background-color: green" id="green-div"></div>
+          <div style= "background-color: red" id="red-div"></div>
+          <div style= "background-color: blue" id="blue-div"></div>
+          <div style= "background-color: black" id="black-div"></div>
+          <div style= "background-color: brown" id="brown-div"></div>
+        </section>
+        <section>
+          <div class="white-div" id="white-bgc-div"></div>
+          <div class="white-div" id="white-bgc-div"></div>
+          <div class="white-div" id="white-bgc-div"></div>
+          <div class="white-div" id="white-bgc-div"></div>
+          <div class="white-div" id="white-bgc-div"></div>
+        </section>
+        <section id="phrase"></section>
+      </body>
+    </html>
+  ```
+
   4 - Uma imagem, dois botões (adicionar e remover a imagem) e um input de texto. Ao clicar no botão 'remover' a imagem deve desaparecer e ao clicar em 'adicionar' a imagem deve aparecer. Ao escrever um texto no input e clicar na tecla 'enter' ele deverá aparecer como legenda abaixo da imagem.
 
   PS.: Para realizar esse exercício, é necessário que você saiba o código da tecla 'enter' para que apenas ao pressioná-la seu evento seja realizado. Para saber mais sobre, leia [esse link](https://odesenvolvedor.com.br/tabela-de-key-codes-para-javascript_1464.html).
