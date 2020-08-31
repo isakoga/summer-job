@@ -164,6 +164,7 @@ EVENTOS JAVASCRIPT
   Não há nenhum script ou arquivo externo js, isso é com você!
 
   1 - A seguir você encontra um formulário para preenchimento de alguns dados, após o preenchimento desses dados, ao clicar no botão 'Submit', deverá aparecer uma frase na tela com os dados preenchidos no formulário. Ex.: Olá _João_, você possui _28_ anos, nasceu em _São Paulo_. Gosta de _escrever códigos_ e no seu tempo livre você adora _andar de bike_!
+  
   Se algum dos inputs estiver em branco deverá aparecer um alerta de erro na página.
 
 ```HTML
@@ -205,7 +206,7 @@ EVENTOS JAVASCRIPT
     </html>
 ```
 
-  2 - A partir de cinco inputs de números e dois botões (par e ímpar). Você deve criar as funções para que ao receber os números e clicar em um dos botões, apareça um array na seção "result" apenas com os números condizentes com o botão apertado. Caso algum dos números recebidos seja nulo, ao clicar no botão deverá aparecer um alerta na página com o texto 'Input inválido. Por favor insira todos os números para executar a operação'.
+  2 - A partir de cinco inputs de números e dois botões (par e ímpar). Você deve criar as funções para que ao receber os números e clicar em um dos botões, apareça um array na seção "result" apenas com os números condizentes com o botão apertado.
 
   ```HTML
   <!DOCTYPE html>
@@ -291,8 +292,8 @@ EVENTOS JAVASCRIPT
 
 [MDN Web docs](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Elementos_construtivos/Events)
 
-[Mais exercicios](https://oscarrobertrodriguez.github.io/exercisesModernDeveloper/javascript-events-in-depth/)
-
 [Eloquent JS - Artigo + Exercicios](https://eloquentjavascript.net/15_event.html)
+
+[Mais exercicios](https://oscarrobertrodriguez.github.io/exercisesModernDeveloper/javascript-events-in-depth/)
 
 [Khan Academy](https://www.khanacademy.org/computing/computer-programming/html-css-js)

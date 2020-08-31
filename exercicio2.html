@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trybe numbers</title>
+  <style>
+    .numbers {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bem vindo ao selecionador de números</h1>
+  </header>
+  <section class="numbers">
+    <label for="number-input1">Digite um número:</label><input type="number" id="number-input1">
+    <label for="number-input2">Digite um número:</label><input type="number" id="number-input2">
+    <label for="number-input3">Digite um número:</label><input type="number" id="number-input3">
+    <label for="number-input4">Digite um número:</label><input type="number" id="number-input4">
+    <label for="number-input5">Digite um número:</label><input type="number" id="number-input5">
+  </section>
+  <section class="buttons">
+    <button type="submit" id="even-button">Par</button>
+    <button type="submit" id="odd-button">Impar</button>
+  </section>
+  <div id="result"></div>
+
+
+  <script>
+    const output = document.getElementById('result');
+    
+    const evenButton = document.getElementById('even-button');
+    evenButton.addEventListener('click', function() {
+      const number1 = document.getElementById('number-input1').value;
+      const number2 = document.getElementById('number-input2').value;
+      const number3 = document.getElementById('number-input3').value;
+      const number4 = document.getElementById('number-input4').value;
+      const number5 = document.getElementById('number-input5').value;
+      const firstArray = [number1, number2, number3, number4, number5];
+      let newArray = [];
+      for (let i = 0; i < firstArray.length; i += 1) {
+        if (firstArray[i] % 2 === 0) {
+          newArray.push(firstArray[i]);
+        }
+        output.innerText = newArray;
+      }
+    });
+
+    const oddButton = document.getElementById('odd-button');
+    oddButton.addEventListener('click', function() {
+      const number1 = document.getElementById('number-input1').value;
+      const number2 = document.getElementById('number-input2').value;
+      const number3 = document.getElementById('number-input3').value;
+      const number4 = document.getElementById('number-input4').value;
+      const number5 = document.getElementById('number-input5').value;
+      const firstArray = [number1, number2, number3, number4, number5];
+      let newArray = [];
+      for (let i = 0; i < firstArray.length; i += 1) {
+        if (firstArray[i] % 2 !== 0) {
+          newArray.push(firstArray[i]);
+        }
+        output.innerText = newArray;
+      }
+    });
+
+  </script>
+</body>
+</html>

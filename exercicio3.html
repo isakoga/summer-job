@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troque a cor</title>
+  <style>
+    section {
+      display: flex;
+    }
+    section div {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      margin: 5px;
+    }
+
+    .white-div {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div style= "background-color: green" id="green-div"></div>
+    <div style= "background-color: red" id="red-div"></div>
+    <div style= "background-color: blue" id="blue-div"></div>
+    <div style= "background-color: black" id="black-div"></div>
+    <div style= "background-color: brown" id="brown-div"></div>
+  </section>
+  <section>
+    <div class="white-div" id="white-bgc-div"></div>
+    <div class="white-div" id="white-bgc-div"></div>
+    <div class="white-div" id="white-bgc-div"></div>
+    <div class="white-div" id="white-bgc-div"></div>
+    <div class="white-div" id="white-bgc-div"></div>
+  </section>
+  <div id="phrase"></div>
+
+  <script>
+    const greenEvent = document.getElementById('green-div');
+    greenEvent.addEventListener('mouseover', function() {
+      document.body.style.backgroundColor = 'green';
+    });
+    const redEvent = document.getElementById('red-div');
+    redEvent.addEventListener('mouseover', function() {
+      document.body.style.backgroundColor = 'red';
+    });
+    const blueEvent = document.getElementById('blue-div');
+    blueEvent.addEventListener('mouseover', function() {
+      document.body.style.backgroundColor = 'blue';
+    });
+    const blackEvent = document.getElementById('black-div');
+    blackEvent.addEventListener('mouseover', function() {
+      document.body.style.backgroundColor = 'black';
+    });
+    const brownEvent = document.getElementById('brown-div');
+    brownEvent.addEventListener('mouseover', function() {
+      document.body.style.backgroundColor = 'brown';
+    });
+
+    const whiteDivs = document.getElementById('white-bgc-div');
+    const phraseOutput = document.getElementById('phrase');
+
+    whiteDivs.addEventListener('click', function() {
+      phraseOutput.innerHTML = 'Estou manipulando elementos';
+    });
+
+      whiteDivs.addEventListener('dblclick', function() {
+        phraseOutput.innerHTML = ''
+      })
+  </script>
+
+</body>
+</html>

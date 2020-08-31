@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formando a frase</title>
+  <style>
+    section {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      margin: 10px;
+    }
+
+    input {
+      margin: 5px;
+    }
+
+    button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Criando uma frase usando eventos</h1>
+  </header>
+  <section id="form" class="form-sect">
+    <label for="name-input">Nome:</label><input type="text" id="name-input" placeholder="nome">
+    <label for="name-input">Idade:</label><input type="text" id="age-input" placeholder="Idade">
+    <label for="name-input">Local de nascimento:</label><input type="text" id="birthplace-input" placeholder="Local de Nascimento">
+    <label for="name-input">O que gosta de fazer?</label><input type="text" id="like-input" placeholder="O que gosta de fazer">
+    <label for="name-input">No tempo livre, o que você faz?</label><input type="text" id="free-time-input" placeholder="Hobby">
+
+    <button type="submit" id="button-submit">Criar frase!</button>
+  </section>
+  <section id="result"></section>
+
+  <script>
+    const button = document.getElementById('button-submit');
+    const outputResult = document.getElementById('result');
+    button.addEventListener('click', function() {
+      const inputName = document.getElementById('name-input').value;
+      const inputAge = document.getElementById('age-input').value;
+      const inputBirthplace = document.getElementById('birthplace-input').value;
+      const inputLikeToDo = document.getElementById('like-input').value;
+      const inputHobby = document.getElementById('free-time-input').value;
+
+      if (!inputName || !inputAge || !inputBirthplace || !inputLikeToDo || !inputHobby) {
+        return window.alert('Erro! Preencha os campos corretamente');
+      }
+      return outputResult.innerHTML = 'Olá ' + inputName + ', você possui ' + inputAge + ' anos, nasceu em ' + inputBirthplace + '. Gosta de ' + inputLikeToDo + ' e no seu tempo livre seu hobby é ' + inputHobby
+    });
+  </script>
+
+</body>
+</html>
