@@ -35,11 +35,11 @@ EVENTOS JAVASCRIPT
 
     O escutador de eventos nada mais é do que aquele código que vai ficar ali esperando que o evento ocorra em seu determinado elemento para que ele comece a executar a função pré-determinada.
 
-      *Mas e então, como eu escrevo esse escutador de eventos no meu projeto??*
+      **Mas e então, como eu escrevo esse escutador de eventos no meu projeto??**
 
     Para adicionar um evento utilizamos a função 'addEventListener' que tem como parâmetros o tipo de evento que vai ser escutado e qual a função que ele vai executar.
       
-      HTMLelement.addEventListener('event', function)
+      HTMLelement.addEventListener('event', function())
     
     Você lembra como podemos acessar elementos HTML usando o DOM, certo? Aqui vamos utilizá-los muito!!
     
