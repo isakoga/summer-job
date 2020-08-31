@@ -86,7 +86,7 @@ EVENTOS JAVASCRIPT
     Agora que você já viu como trabalhar com eventos, vamos praticar mais um pouco!
 
     Copie o código abaixo e rode na sua máquina, ali temos uma página HTML com um quadrado e quatro botões, apenas o primeiro botão(cor vermelha) está funcionando, faça com que os outros botões funcionem também!
-    Em seguida, tente trocar o evento dos escutadores para dblclick ou mouseover(abaixo nos recursos adicionais temos uma lista com mais eventos), se quiser troque as cores, adicione mais botões de cores, frases dentro do quadrado, o importante é praticar e se divertir!!!
+    Em seguida, tente trocar o evento dos escutadores para dblclick, mouseover ou algum outro evento(lembre-se do link ali em cima com a lista de eventos), se quiser troque as cores, adicione mais botões de cores, frases dentro do quadrado, o importante é praticar e se divertir!!!
 
 ```HTML
 <!DOCTYPE html>
@@ -163,15 +163,58 @@ EVENTOS JAVASCRIPT
   A seguir você encontra uma página HTML para cada exercício que você precisa fazer.
   Não há nenhum script ou arquivo externo js, isso é com você!
 
-  1 - A partir de dois inputs de números e quatro botões com as seguintes operações: soma, subtração, multiplicação e divisão. Você deve criar as funções para que ao receber os números e clicar no botão a operação descrita deverá acontecer e o resultado aparecer na seção "result". Caso algum dos números recebidos seja 0 ou nulo, ao clicar no botão da operação deverá aparecer um alerta na página com o texto 'Input inválido. Por favor insira os números para realizar a operação'.
+  1 - A seguir você encontra um formulário para preenchimento de alguns dados, após o preenchimento desses dados, ao clicar no botão 'Submit', deverá aparecer uma frase na tela com os dados preenchidos no formulário. Ex.: Olá _João_, você possui _28_ anos, nasceu em _São Paulo_. Gosta de _escrever códigos_ e no seu tempo livre você adora _andar de bike_!
+  Se algum dos inputs estiver em branco deverá aparecer um alerta de erro na página.
 
-  2 - A seguir você encontra um formulário para preenchimento de alguns dados, após o preenchimento desses dados, ao clicar no botão 'Submit', deverá aparecer uma frase na tela com os dados preenchidos no formulário. Ex.: Olá _João_, você possui _28_ anos, nasceu em _São Paulo_. Gosta de _escrever códigos_ e no seu tempo livre você adora _andar de bike_!
+  ```HTML
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formando a frase</title>
+  <style>
+    section {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      margin: 10px;
+    }
 
-  3 - O código abaixo gera uma página com cinco quadrados de cores diferentes e cinco quadrados brancos.
+    input {
+      margin: 5px;
+    }
+
+    button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Criando uma frase usando eventos</h1>
+  </header>
+  <section id="form" class="form-sect">
+    <label for="name-input">Nome:</label><input type="text" id="name-input" placeholder="nome">
+    <label for="name-input">Idade:</label><input type="text" id="age-input" placeholder="Idade">
+    <label for="name-input">Local de nascimento:</label><input type="text" id="birthplace-input" placeholder="Local de Nascimento">
+    <label for="name-input">O que gosta de fazer?</label><input type="text" id="like-input" placeholder="O que gosta de fazer">
+    <label for="name-input">No tempo livre, o que você faz?</label><input type="text" id="free-time-input" placeholder="Hobby">
+
+    <button type="submit" id="button-submit">Criar frase!</button>
+  </section>
+  <section id="result"></section>
+</body>
+</html>
+  ```
+
+  2 - O código abaixo gera uma página com cinco quadrados de cores diferentes e cinco quadrados brancos.
       Ao passar o mouse por cima de algum dos quadrados, a cor de fundo da tela deverá mudar para cor do respectivo quadrado.
       Ao clicar em um dos quadrados coloridos, a cor de todos os quadrados brancos deve mudar para a cor do quadrado clicado.
       Ao clicar duas vezes em algum dos quadrados brancos, a frase "Estou manipulando elementos" deve aparecer na seção abaixo deles.
       Ao pressionar a tecla "SHIFT" o texto desaparece.
+
+  3 - A partir de cinco inputs de números e dois botões (par e ímpar). Você deve criar as funções para que ao receber os números e clicar em um dos botões, apareça um array na seção "result" apenas com os números condizentes com o botão apertado. Caso algum dos números recebidos seja 0 ou nulo, ao clicar no botão deverá aparecer um alerta na página com o texto 'Input inválido. Por favor insira todos os números para executar a operação'.
        
   4 - Uma imagem, dois botões (adicionar e remover a imagem) e um input de texto. Ao clicar no botão 'remover' a imagem deve desaparecer e ao clicar em 'adicionar' a imagem deve aparecer. Ao escrever um texto no input e clicar na tecla 'enter' ele deverá aparecer como legenda abaixo da imagem.
 
