@@ -74,7 +74,88 @@ EVENTOS JAVASCRIPT
     Copie o código abaixo e rode na sua máquina, ali temos uma página HTML com um quadrado e quatro botões, conforme vc aperta algum dos botões a classe da estilização do quadrado muda para a classe com a cor de fundo igual a cor do botão que você apertou.
     Tente trocar o evento dos escutadores para dblclick ou mouseover, procure mais eventos na lista que falamos ali em cima e se divirta!!!
 
-    //EXEMPLO COMO FUNCIONA UM ADDEVENTLISTENER 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>addEventListener Example</title>
+  <style>
+    .color {
+      background-color: orange;
+      border: 1px solid black;
+      height: 250px;
+      width: 250px;
+      margin: 20px;
+    }
+
+    .red-color {
+      background-color: red;
+      border: 1px solid black;
+      height: 250px;
+      width: 250px;
+      margin: 20px;
+    }
+
+    .green-color {
+      background-color: green;
+      border: 1px solid black;
+      height: 250px;
+      width: 250px;
+      margin: 20px;
+    }
+
+    .blue-color {
+      background-color: blue;
+      border: 1px solid black;
+      height: 250px;
+      width: 250px;
+      margin: 20px;
+    }
+
+    .yellow-color {
+      background-color: yellow;
+      border: 1px solid black;
+      height: 250px;
+      width: 250px;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="color" id="color-div">
+  </div>
+  <button type="submit" id="red-button">VERMELHO</button>
+  <button type="submit" id="green-button">VERDE</button>
+  <button type="submit" id="blue-button">AZUL</button>
+  <button type="submit" id="yellow-button">AMARELO</button>
+
+  <script>
+    const colorDiv = document.getElementById('color-div');
+
+    const redButton = document.getElementById('red-button');
+    redButton.addEventListener('click', function() {
+      colorDiv.className = 'red-color';
+    });
+
+    const greenButton = document.getElementById('green-button');
+    greenButton.addEventListener('click', function() {
+      colorDiv.className = 'green-color';
+    });
+
+    const blueButton = document.getElementById('blue-button');
+    blueButton.addEventListener('click', function() {
+      colorDiv.className = 'blue-color';
+    });
+    
+    const yellowButton = document.getElementById('yellow-button');
+    yellowButton.addEventListener('click', function() {
+      colorDiv.className = 'yellow-color';
+    });
+  </script>
+</body>
+</html>
 
 - Exercícios
 
