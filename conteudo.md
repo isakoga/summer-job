@@ -74,7 +74,8 @@ EVENTOS JAVASCRIPT
     Copie o código abaixo e rode na sua máquina, ali temos uma página HTML com um quadrado e quatro botões, conforme vc aperta algum dos botões a classe da estilização do quadrado muda para a classe com a cor de fundo igual a cor do botão que você apertou.
     Tente trocar o evento dos escutadores para dblclick ou mouseover, procure mais eventos na lista que falamos ali em cima e se divirta!!!
 
-    <!DOCTYPE html>
+```HTML
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -156,6 +157,7 @@ EVENTOS JAVASCRIPT
   </script>
 </body>
 </html>
+´´´
 
 - Exercícios
 
