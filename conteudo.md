@@ -9,7 +9,7 @@ EVENTOS JAVASCRIPT
 
   Imagina que você está na página de uma galeria de imagens, ali você encontra diversas imagens diferentes mas sem um título ou uma descrição e para acessar as informações de alguma imagem você tem que clicar na imagem onde acontece um novo load de página carregando as informações desejadas.
   Não seria muito mais fácil se apenas ao passar o mouse por cima da imagem já aparecesse alguma descrição? Ou que ao clicar na imagem, ao invés de carregar uma página novamente com ela ampliada e com mais informações, ela apenas aparecesse ali "automágicamente"?
-  É pra isso que nosso querido JavaScript e seus eventos existem!!! A partir do momento que usamos o JavaScript pra fazer esse tipo de interação entre usuário, navegador e sua página Web, conseguimos deixar uma página simples muito mais dinâmica e interativa pra quem ta acessando ela ---além de poupar o tempo do desenvolvedor---! Incrível, não é mesmo??? 🤩
+  É pra isso que nosso querido JavaScript e seus eventos existem!!! A partir do momento que usamos o JavaScript pra fazer esse tipo de interação entre usuário, navegador e sua página Web, conseguimos deixar uma página simples muito mais dinâmica e interativa pra quem ta acessando ela <s>além de poupar o tempo do desenvolvedor</s>! Incrível, não é mesmo??? 🤩
 
 - Você será capaz de:
 
