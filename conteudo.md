@@ -287,13 +287,11 @@ EVENTOS JAVASCRIPT
     </html>
   ```
 
-  4 - Uma imagem, dois botões (adicionar e remover a imagem) e um input de texto. Ao clicar no botão 'remover' a imagem deve desaparecer e ao clicar em 'adicionar' a imagem deve aparecer. Ao escrever um texto no input e clicar na tecla 'enter' ele deverá aparecer como legenda abaixo da imagem.
-
-  PS.: Para realizar esse exercício, é necessário que você saiba o código da tecla 'enter' para que apenas ao pressioná-la seu evento seja realizado. Para saber mais sobre, leia [esse link](https://odesenvolvedor.com.br/tabela-de-key-codes-para-javascript_1464.html).
-
 - Recursos Adicionais
 
 [MDN Web docs](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Elementos_construtivos/Events)
+
+[Mais exercicios](https://oscarrobertrodriguez.github.io/exercisesModernDeveloper/javascript-events-in-depth/)
 
 [Eloquent JS - Artigo + Exercicios](https://eloquentjavascript.net/15_event.html)
 
